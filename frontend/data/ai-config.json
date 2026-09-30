@@ -1,0 +1,183 @@
+{
+  "settings": {
+    "autopilot": false,
+    "morningTime": "09:00",
+    "eveningTime": "19:00",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "apiKey": ""
+  },
+  "queue": [
+    {
+      "id": "trend-1790520841964-9wva4",
+      "topic": "OpenAI’s Optics Concern: How Public Perception Shapes AI News",
+      "category": "tech-ai",
+      "status": "published",
+      "createdAt": "2026-09-27T14:54:01.964Z",
+      "source": "trend-discovery",
+      "originalHeadline": "[HN 504pts] OpenAI Feared \"Optics\" of what might appear on Hacker News",
+      "publishedSlug": "openai-optics-how-perception-shapes-ai-news",
+      "seoScore": 95,
+      "error": null,
+      "publishedAt": "2026-09-27T14:56:24.527Z",
+      "auditNotes": "- Title within 65 chars, description trimmed to 155 chars.\n- Slug generated in kebab-case.\n- Heading hierarchy correct (H2 > H3, no H1 in body).\n- Removed incomplete sentence, added concise takeaway.\n- No AI fluff, clear, engaging language.\n- All constraints satisfied, green signal issued."
+    },
+    {
+      "id": "trend-1790520841965-w0m0n",
+      "topic": "Master Go Concurrency: A Practical Guide for Developers",
+      "category": "creators",
+      "status": "pending",
+      "createdAt": "2026-09-27T14:54:01.965Z",
+      "source": "trend-discovery",
+      "originalHeadline": "[HN 289pts] Go Concurrency Distilled",
+      "publishedSlug": null,
+      "seoScore": null,
+      "error": null
+    },
+    {
+      "id": "trend-1790520841965-57zco",
+      "topic": "How Chat Templates Transform LLM Self‑Referential Voice",
+      "category": "tech-ai",
+      "status": "pending",
+      "createdAt": "2026-09-27T14:54:01.965Z",
+      "source": "trend-discovery",
+      "originalHeadline": "[HN 78pts] \"As a Language Model\": Chat Template Switches LLM Self-Referential Voice",
+      "publishedSlug": null,
+      "seoScore": null,
+      "error": null
+    },
+    {
+      "id": "trend-1790520841965-bqnvc",
+      "topic": "DeepSeek Elastic Compute (DSec): Scalable AI GPU Cloud Service",
+      "category": "tech-ai",
+      "status": "pending",
+      "createdAt": "2026-09-27T14:54:01.965Z",
+      "source": "trend-discovery",
+      "originalHeadline": "[HN 350pts] DeepSeek Elastic Compute (DSec)",
+      "publishedSlug": null,
+      "seoScore": null,
+      "error": null
+    },
+    {
+      "id": "trend-1790520841965-5773p",
+      "topic": "Why Developers Are Turning to TLA+ for System Design",
+      "category": "creators",
+      "status": "pending",
+      "createdAt": "2026-09-27T14:54:01.965Z",
+      "source": "trend-discovery",
+      "originalHeadline": "[HN 69pts] The internet discovers TLA+. Now what?",
+      "publishedSlug": null,
+      "seoScore": null,
+      "error": null
+    },
+    {
+      "id": "topic-1790522657172-mejr1",
+      "topic": "top 10 ai models in 2026",
+      "category": "tech-ai",
+      "status": "failed",
+      "createdAt": "2026-09-27T15:24:17.172Z",
+      "publishedSlug": null,
+      "seoScore": null,
+      "error": "Groq API Error (400): {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"max completion tokens reached before generating a valid document\"}}\n"
+    },
+    {
+      "id": "topic-1790522831357-3jkpc",
+      "topic": "top 10 ai models in 2026",
+      "category": "tech-ai",
+      "status": "published",
+      "createdAt": "2026-09-27T15:27:11.357Z",
+      "publishedSlug": "top-10-ai-models-2026",
+      "seoScore": 95,
+      "error": null,
+      "publishedAt": "2026-09-27T15:27:30.807Z",
+      "auditNotes": "- Title 58 chars (≤65) ✅\n- Description 153 chars (≤160) ✅\n- Category matches allowed list ✅\n- No H1 in body; H2 followed by H3 hierarchy ✅\n- Content free of AI fluff, strong engagement cues ✅\n- Slug is clean kebab‑case ✅\n- Tags 5, relevant and kebab‑case ✅"
+    }
+  ],
+  "logs": [
+    {
+      "timestamp": "2026-09-27T15:27:11.395Z",
+      "type": "info",
+      "message": "[Manual Trigger] User requested instant execution for topic ID: topic-1790522831357-3jkpc"
+    },
+    {
+      "timestamp": "2026-09-27T15:27:11.362Z",
+      "type": "info",
+      "message": "Added 1 new topic(s) to the queue under category \"tech-ai\"."
+    },
+    {
+      "timestamp": "2026-09-27T15:24:17.428Z",
+      "type": "info",
+      "message": "[Manual Trigger] User requested instant execution for topic ID: topic-1790522657172-mejr1"
+    },
+    {
+      "timestamp": "2026-09-27T15:24:17.178Z",
+      "type": "info",
+      "message": "Added 1 new topic(s) to the queue under category \"tech-ai\"."
+    },
+    {
+      "timestamp": "2026-09-27T14:56:09.891Z",
+      "type": "info",
+      "message": "[Manual Trigger] User requested instant execution for topic ID: trend-1790520841964-9wva4"
+    },
+    {
+      "timestamp": "2026-09-27T14:54:01.967Z",
+      "type": "success",
+      "message": "[Trend Discovery] ✓ Discovered 9 raw trends → LLM selected 5 → Added 5 new topics to queue!"
+    },
+    {
+      "timestamp": "2026-09-27T14:53:56.599Z",
+      "type": "info",
+      "message": "[Trend Discovery] Found 9 HackerNews stories (score > 50)"
+    },
+    {
+      "timestamp": "2026-09-27T14:53:50.597Z",
+      "type": "info",
+      "message": "[Trend Discovery] Found 0 Reddit posts (score > 100)"
+    },
+    {
+      "timestamp": "2026-09-27T14:53:48.975Z",
+      "type": "info",
+      "message": "[Trend Discovery] Fetching Reddit /r/technology trends..."
+    },
+    {
+      "timestamp": "2026-09-27T14:53:48.958Z",
+      "type": "info",
+      "message": "[Trend Discovery] Fetching HackerNews top stories..."
+    },
+    {
+      "timestamp": "2026-09-27T14:53:48.955Z",
+      "type": "info",
+      "message": "[Trend Discovery] 🔍 Starting autonomous trend discovery scan..."
+    },
+    {
+      "timestamp": "2026-09-27T14:53:48.952Z",
+      "type": "info",
+      "message": "[API] Trend Discovery endpoint triggered."
+    },
+    {
+      "timestamp": "2026-09-27T14:24:37.250Z",
+      "type": "info",
+      "message": "Settings updated: Autopilot=OFF, Morning=09:00, Evening=19:00, Provider=groq"
+    },
+    {
+      "timestamp": "2026-09-27T13:46:06.224Z",
+      "type": "info",
+      "message": "Settings updated: Autopilot=OFF, Morning=09:00, Evening=19:00, Provider=groq"
+    },
+    {
+      "timestamp": "2026-09-27T13:46:02.351Z",
+      "type": "info",
+      "message": "Settings updated: Autopilot=ON, Morning=09:00, Evening=19:00, Provider=groq"
+    },
+    {
+      "timestamp": "2026-09-27T13:45:00.000Z",
+      "type": "info",
+      "message": "Autonomous AI Content Engine ready."
+    }
+  ],
+  "stats": {
+    "totalGenerated": 2,
+    "lastRunAt": "2026-09-27T15:27:30.807Z",
+    "lastSlotRun": null
+  }
+}

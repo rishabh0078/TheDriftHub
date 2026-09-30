@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #171717;
+  --color-on-primary: #ffffff;
+  --color-ink: #171717;
+  --color-body: #4d4d4d;
+  --color-mute: #888888;
+  --color-hairline: #ebebeb;
+  --color-hairline-strong: #a1a1a1;
+  --color-canvas: #ffffff;
+  --color-canvas-soft: #fafafa;
+  --color-canvas-soft-2: #f5f5f5;
+  --color-link-color: #0070f3;
+  --color-link-deep: #0761d1;
+  --color-link-bg-soft: #d3e5ff;
+  --color-success: #0070f3;
+  --color-error: #ee0000;
+  --color-warning: #f5a623;
+  --color-violet: #4f46e5;
+  --color-cyan: #0284c7;
+  --color-stream-tech: #2563eb;
+  --color-stream-memes: #d97706;
+  --color-stream-creators: #4f46e5;
+  --color-stream-movies: #dc2626;
+
+  --font-sans: "Outfit", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Newsreader", "Charter", "Georgia", serif;
+  --font-mono: "JetBrains Mono", "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-canvas-soft);
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-mute);
+}
+
+/* High-End Editorial Dropcap */
+.dropcap::first-letter {
+  float: left;
+  font-family: var(--font-sans);
+  font-size: 4.5rem;
+  line-height: 3.75rem;
+  padding-right: 0.85rem;
+  padding-top: 0.15rem;
+  font-weight: 900;
+  color: var(--color-primary);
+  letter-spacing: -0.05em;
+}
+
+/* Magazine Image Hover Zoom */
+.img-zoom-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.img-zoom-target {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+.group:hover .img-zoom-target {
+  transform: scale(1.035);
+}
+
+/* Clean editorial divider line */
+.editorial-rule {
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-hairline-strong) 0%, var(--color-hairline) 100%);
+}
+
+/* Markdown Prose Rich Formatting matching original Verge / Wired typography */
+.prose-editorial h2 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .prose-editorial h2 {
+    font-size: 2rem;
+  }
+}
+
+.prose-editorial h3 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--color-primary);
+  letter-spacing: -0.015em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-editorial p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+}
+
+.prose-editorial ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prose-editorial ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prose-editorial li {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.prose-editorial blockquote {
+  border-left: 4px solid var(--color-primary);
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--color-body);
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Comparison Tables in Articles */
+.prose-editorial table {
+  width: 100%;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  border-collapse: collapse;
+  border: 1px solid var(--color-hairline);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.9rem;
+  display: block;
+  overflow-x: auto;
+}
+
+@media (min-width: 768px) {
+  .prose-editorial table {
+    display: table;
+  }
+}
+
+.prose-editorial th {
+  background-color: var(--color-canvas-soft);
+  color: var(--color-primary);
+  font-weight: 800;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-hairline);
+  font-family: var(--font-sans);
+}
+
+.prose-editorial td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-hairline);
+  color: var(--color-body);
+}
+
+.prose-editorial tr:last-child td {
+  border-bottom: none;
+}

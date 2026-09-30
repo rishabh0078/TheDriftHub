@@ -1,15 +1,18 @@
 # Dependencies
 node_modules/
 **/node_modules/
+.venv/
+**/__pycache__/
 
 # Build outputs
+.next/
 dist/
-.dist/
-**/dist/
+build/
 
-# Astro
-.astro/
-**/.astro/
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
 
 # Environment files
 .env
@@ -20,7 +23,7 @@ dist/
 .DS_Store
 Thumbs.db
 
-# Editor
+# Logs & Editor
 .vscode/settings.json
 *.log
 
